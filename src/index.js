@@ -6,9 +6,7 @@ const admin = {
   lastName:"Patidar",
   role: "Front-End Developer",
   contactNumber: "+91 99777-03412",
-  email: "pramod.patidar@gmail.com",
-  github: "https://github.com/pramodpatidar",
-  linkedIn: "https://www.linkedin.com/in/pramod-patidar/",
+  image: "/src/assets/images/PNGPROFILE.png",
   resume: "/resume.pdf",
   about: "Hi there! I’m Pramod Patidar, a passionate front-end developer with a love for creating visually engaging, interactive, and user-friendly websites. With a solid foundation in HTML, CSS, and JavaScript, I specialize in bringing designs to life with React, Framer Motion, and GSAP to build dynamic and seamless user experience, I am always eager to explore new technologies and stay up-to-date with the latest trends in web development. Whether it’s crafting pixel-perfect layouts, optimizing performance, or implementing smooth animations, I focus on delivering clean, efficient, and aesthetically pleasing code. Let’s create something amazing together!",
   skills: [

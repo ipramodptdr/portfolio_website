@@ -16,9 +16,13 @@ const About = () => {
         >
           About Me
         </motion.h2>
-        <p className="text-gray-300 max-w-2xl">
+        <motion.p 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}     
+        className="text-gray-300 max-w-2xl">
          {admin.about}
-        </p>
+        </motion.p>
       </div>
     </motion.section>
   );
