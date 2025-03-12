@@ -22,9 +22,9 @@ const Hero = () => {
         <h1 className="text-5xl font-bold text-white mb-4">
           <TypeAnimation
             sequence={[
-              "Hi, I'm a Front-End Developer",
+              "Hi, I'm PRAMOD PATIDAR a Front-End Developer",
               1500,
-              "Hi, I'm a UI/UX Designer",
+              "Hi, I'm PRAMOD PATIDAR a UI/UX Designer",
               1500,
             ]}
             speed={10}
