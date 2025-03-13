@@ -19,12 +19,13 @@ const Hero = () => {
 
       {/* Content */}
       <div className="text-center relative z-10">
-        <h1 className="text-5xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-white mb-4">
+          <span>Hi, I'm  Pramod</span>
           <TypeAnimation
             sequence={[
-              "Hi, I'm Pramod Patidar a Front-End Developer",
+              "  Front-End Developer",
               1500,
-              "Hi, I'm Pramod Patidar a UI/UX Designer",
+              "  UI/UX Designer",
               1500,
             ]}
             speed={10}
@@ -32,7 +33,7 @@ const Hero = () => {
             cursor={true}
           />
         </h1>
-        <p className="text-gray-300 text-xl mb-8">
+        <p className="text-gray-300 text-xl mb-8 font-light">
           I build modern and responsive web applications.
         </p>
         <motion.button
@@ -41,7 +42,6 @@ const Hero = () => {
           animate={{ y: [0, -10, 0] }}
           transition={{
             duration: 2,
-            repeat: Infinity,
             ease: "easeInOut",
           }}
           className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold"

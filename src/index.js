@@ -27,8 +27,10 @@ const admin = {
 const projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "A modern web app built with React.",
+    title: "Guess The Number Game",
+    description: "A simple game where the user has to guess the number between 1 and 100.",
+    href: "https://lucky-guess.netlify.app//",
+    image: "/src/assets/Images/guess.png"
   },
   {
     id: 2,
