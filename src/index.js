@@ -2,7 +2,7 @@ import { FaCss3, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { FiFramer } from "react-icons/fi";
 import { SiTailwindcss } from "react-icons/si";
 import guessImage from "./assets/Images/guess.png";
-import profileImage from "./assets/images/PNGPROFILE.png";
+import profileImage from "./assets/Images/PNGPROFILE.png";
 
 const admin = {
   firstName: "Pramod ",
