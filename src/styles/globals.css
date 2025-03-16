@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&family=Quicksand:wght@300;400;500;600&display=swap');
+
+:root {
+  --font-primary: 'Orbitron', sans-serif;
+  --font-secondary: 'Share Tech Mono', monospace;
+  --font-text: 'Quicksand', sans-serif;
+}
+
+/* Base Typography */
+body {
+  font-family: var(--font-text);
+  background-color: #050510;
+  color: #94a3b8;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+}
+
+/* Navigation and Buttons */
+nav, button {
+  font-family: var(--font-primary);
+}
+
+/* Code and Technical Text */
+code, .mono {
+  font-family: var(--font-secondary);
+}
+
+/* Typography Utility Classes */
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+.font-text {
+  font-family: var(--font-text);
+}
+
+/* Text Gradients */
+.text-gradient-dark {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-cyan-400;
+  background-size: 200% auto;
+  animation: gradient 4s linear infinite;
+}
+
+.text-gradient-light {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 via-fuchsia-600 to-cyan-600;
+  background-size: 200% auto;
+  animation: gradient 4s linear infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+} 
