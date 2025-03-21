@@ -53,35 +53,35 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="fixed w-full z-[100] backdrop-blur-lg border-b bg-[#050510]/80 border-cyan-500/20"
+        className="border-b border-cyan-500/20 w-full backdrop-blur-lg fixed z-[49]"
       >
-        <div className="container mx-auto flex justify-between items-center p-4">
+        <div className="container flex justify-between p-4 items-center mx-auto">
           <motion.div 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="relative group"
+            className="group relative"
           >
             <img 
               src={Logo} 
               alt="Logo" 
-              className="w-10 h-10 object-contain transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(0,255,255,0.3)]"
+              className="h-10 w-10 duration-300 group-hover:shadow-[0_0_15px_rgba(0,255,255,0.3)] object-contain transition-all"  
             />
             <motion.div
-              className="absolute inset-0 rounded-full bg-cyan-500/20"
+              className="bg-cyan-500/20 rounded-full absolute inset-0"
               initial={{ scale: 0 }}
               whileHover={{ scale: 1.2, opacity: 0 }}
               transition={{ duration: 0.5 }}
             />
           </motion.div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex gap-4 items-center">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(true)}
-              className="relative group p-2 rounded-lg border backdrop-blur-sm border-cyan-500/20 bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10"
+              className="bg-gradient-to-r border border-cyan-500/20 p-2 rounded-lg backdrop-blur-sm from-cyan-500/10 group relative to-fuchsia-500/10"
             >
-              <FiMenu className="text-cyan-400 text-2xl" />
+              <FiMenu className="text-2xl text-cyan-400" />
             </motion.button>
           </div>
         </div>
@@ -93,7 +93,7 @@ const Navbar = () => {
               animate={{ clipPath: "circle(150% at calc(100% - 2.5rem) 2.5rem)" }}
               exit={{ clipPath: "circle(0% at calc(100% - 2.5rem) 2.5rem)" }}
               transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-              className="fixed inset-0 w-full h-screen backdrop-blur-lg bg-[#050510]/95 z-[101]"
+              className="bg-[#050510]/95 h-screen w-full backdrop-blur-lg fixed inset-0 z-[101]"
             >
               <motion.button
                 initial={{ opacity: 0, rotate: -45 }}
@@ -101,9 +101,9 @@ const Navbar = () => {
                 exit={{ opacity: 0, rotate: 45 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 onClick={() => setIsOpen(false)}
-                className="absolute top-6 right-6 p-2 rounded-full border backdrop-blur-sm border-cyan-500/20 bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 hover:shadow-[0_0_15px_rgba(0,255,255,0.3)]"
+                className="bg-gradient-to-r border border-cyan-500/20 p-2 rounded-full absolute backdrop-blur-sm from-cyan-500/10 hover:shadow-[0_0_15px_rgba(0,255,255,0.3)] right-6 to-fuchsia-500/10 top-6"
               >
-                <IoClose className="text-cyan-400 text-3xl" />
+                <IoClose className="text-3xl text-cyan-400" />
               </motion.button>
 
               <motion.ul
@@ -111,33 +111,33 @@ const Navbar = () => {
                 initial="closed"
                 animate="open"
                 exit="closed"
-                className="flex flex-col items-center justify-center h-full gap-8"
+                className="flex flex-col h-full justify-center gap-8 items-center"
               >
                 {menuItems.map((item, i) => (
                   <motion.li
                     key={item}
                     custom={i}
                     variants={itemVariants}
-                    className="relative overflow-hidden group"
+                    className="group overflow-hidden relative"
                   >
                     <motion.a
                       href={`#${item.toLowerCase()}`}
                       onClick={() => setIsOpen(false)}
-                      className="text-6xl font-primary tracking-wider relative block"
+                      className="text-6xl block font-primary relative tracking-wider"
                     >
-                      <span className="relative inline-block">
-                        <span className="relative z-10 text-cyan-400/80 transition-colors duration-300 group-hover:text-cyan-400">
+                      <span className="inline-block relative">
+                        <span className="text-cyan-400/80 duration-300 group-hover:text-cyan-400 relative transition-colors z-10">
                           {item}
                         </span>
                         <motion.span
-                          className="absolute inset-0 bg-[#050510] z-0"
+                          className="bg-[#050510] absolute inset-0 z-0"
                           initial={{ scaleX: 0 }}
                           whileHover={{ scaleX: 0 }}
                           transition={{ duration: 0.5, ease: "easeInOut" }}
                         />
                       </span>
                       <motion.div
-                        className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-500 to-fuchsia-500"
+                        className="bg-gradient-to-r h-0.5 w-full absolute bottom-0 from-cyan-500 left-0 to-fuchsia-500"
                         initial={{ scaleX: 0, originX: 0 }}
                         whileHover={{ scaleX: 1 }}
                         transition={{ duration: 0.3 }}
@@ -150,10 +150,6 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </motion.nav>
-
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
-      `}</style>
     </>
   );
 };

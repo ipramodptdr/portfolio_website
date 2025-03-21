@@ -2,14 +2,12 @@ import { FaCss3, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { FiFramer } from "react-icons/fi";
 import { SiTailwindcss } from "react-icons/si";
 import guessImage from "./assets/Images/guess.png";
-import profileImage from "./assets/Images/PNGPROFILE.png";
 
 const admin = {
   firstName: "Pramod ",
   lastName:"Patidar",
   role: "Front-End Developer",
   contactNumber: "+91 99777-03412",
-  image: profileImage,
   resume: "/resume.pdf",
   about: "Hi there! I'm Pramod Patidar, a passionate front-end developer with a love for creating visually engaging, interactive, and user-friendly websites. With a solid foundation in HTML, CSS, and JavaScript, I specialize in bringing designs to life with React, Framer Motion, and GSAP to build dynamic and seamless user experience, I am always eager to explore new technologies and stay up-to-date with the latest trends in web development. Whether it's crafting pixel-perfect layouts, optimizing performance, or implementing smooth animations, I focus on delivering clean, efficient, and aesthetically pleasing code. Let's create something amazing together!",
   skills: [
