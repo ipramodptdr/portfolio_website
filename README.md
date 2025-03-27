@@ -22,7 +22,7 @@ A modern, responsive portfolio website showcasing my work as a Frontend Develope
 
 ## 🚀 Live Demo
 
-Visit my portfolio: [pramodpatidar.netlify.app](https://pramodpatidar.netlify.app)
+Visit my portfolio: [pramodpatidar.netlify.app](https://pramod.tech)
 
 ## 📂 Project Sections
 
