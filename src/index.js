@@ -1,6 +1,7 @@
 import { FaCss3, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { FiFramer } from "react-icons/fi";
 import { SiTailwindcss } from "react-icons/si";
+import ecommerce from "./assets/Images/E-commerce.png";
 import guessImage from "./assets/Images/guess.png";
 
 const admin = {
@@ -35,8 +36,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "An e-commerce platform with a sleek UI.",
+    title: "E-Commerce Website",
+    description: "An e-commerce platform. It has a user-friendly interface and a seamless shopping experience.",
+    href: "https://github.com/ipramodptdr/E-Commerce",
+    image: ecommerce
   },
   {
     id: 3,

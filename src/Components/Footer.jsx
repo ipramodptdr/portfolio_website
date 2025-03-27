@@ -4,8 +4,8 @@ import { FaGithub, FaHeart, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   const socialLinks = [
     { icon: FaGithub, url: "https://github.com/ipramodptdr", label: "GitHub" },
-    { icon: FaLinkedin, url: "https://linkedin.com/in/pramodptdr", label: "LinkedIn" },
-    { icon: FaTwitter, url: "https://twitter.com/pramodptdr", label: "Twitter" },
+    { icon: FaLinkedin, url: "https://www.linkedin.com/in/pramodptdr", label: "LinkedIn" },
+    { icon: FaTwitter, url: "https://x.com/ipramxd", label: "Twitter" },
   ];
 
   return (

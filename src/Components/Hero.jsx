@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import Preloader from "./Preloader";
 
@@ -16,8 +16,9 @@ const Hero = () => {
 
   const socialLinks = [
     { icon: FaGithub, url: "https://github.com/ipramodptdr" },
-    { icon: FaLinkedin, url: "https://linkedin.com/in/pramodptdr" },
-    { icon: FaTwitter, url: "https://twitter.com/pramodptdr" },
+    { icon: FaLinkedin, url: "https://www.linkedin.com/in/pramodptdr" },
+    { icon: FaTwitter, url: "https://x.com/ipramxd" },
+    {icon: FaInstagram, url: "https://www.instagram.com/pr4mod7/" },
   ];
 
   const revealVariants = {
