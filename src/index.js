@@ -37,8 +37,8 @@ const projects = [
   {
     id: 2,
     title: "E-Commerce Website",
-    description: "An e-commerce platform. It has a user-friendly interface and a seamless shopping experience.",
-    href: "https://github.com/ipramodptdr/E-Commerce",
+    description: "An interactive e-commerce website built using React.",
+    href: "https://tst-e-commerce.netlify.app/",
     image: ecommerce
   },
   {
