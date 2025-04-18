@@ -86,7 +86,7 @@ const About = () => {
               >
                 <div className="flex items-center justify-center gap-2">
                   <FaDownload />
-                  <a href="../src/assets/Images/PramodResume.pdf" download>Download Resume</a>
+                  <a href="/PramodResume.pdf" download>Download Resume</a>
                 </div>
               </motion.a>
             </motion.div>
