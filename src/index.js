@@ -41,16 +41,6 @@ const projects = [
     href: "https://tst-e-commerce.netlify.app/",
     image: ecommerce
   },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "A social media platform with a sleek UI.",
-  },
-  {
-    id: 4,
-    title: "Project 4",
-    description: "A portfolio website with a sleek UI.",
-  },
 ];  
 
 
